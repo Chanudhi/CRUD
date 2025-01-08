@@ -85,4 +85,6 @@ const updateUser = async ( req, res,  next) => {
 exports.getAllUsers = getAllUsers;
 exports.addUsers = addUsers;
 exports.getById = getById;
+exports.updateUser=updateUser;
+
 
