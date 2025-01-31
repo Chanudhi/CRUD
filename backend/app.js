@@ -12,7 +12,7 @@ app.use(express.json());
 app.use("/users",router);
 
 
-mongoose.connect("mongodb+srv://admin:iCL0ZPNLZZ4v076w@cluster0.p7sns.mongodb.net/")
+mongoose.connect("mongodb+srv://admin:enterpw@cluster0.p7sns.mongodb.net/")
 .then(()=> console.log("Connected to MongoDB"))
 .then(()=> {
     app.listen(5000);
