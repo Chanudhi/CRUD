@@ -1,12 +1,10 @@
-import './App.css';
+import "./App.css";
+import Home from "./components/home/home";
 
 function App() {
   return (
-    <div className="App">
-      <h1>helow hola
-        <br/>
-        Esto es un ejemplo de código en ReactJS
-      </h1>
+    <div>
+    <Home />
     </div>
   );
 }
