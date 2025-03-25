@@ -1,12 +1,22 @@
-import React from 'react'; // Ensure React is imported
-import './App.css'; // Ensure the CSS file path is correct
-import Home from './components/home/home'; // Ensure the Home component path is correct
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Create from './components/Create';
+import Read from './components/Read';
+import Update from './components/Update';
+import Delete from './components/Delete';
 
 function App() {
   return (
-    <div>
-      <Home /> {/* Ensure the Home component is correctly defined and exported */}
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/create" component={Create} />
+          <Route path="/read" component={Read} />
+          <Route path="/update/:id" component={Update} />
+          <Route path="/delete/:id" component={Delete} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
